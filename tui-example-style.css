@@ -19,3 +19,13 @@ body {
   .contents {
     padding: 20px 52px;
   }
+
+  
+  .margin-bottom-1prct {
+    margin-bottom: 1%;
+  }
+
+  #prometheusFormatData {
+    font-size:small;
+    white-space: pre-wrap;
+  }

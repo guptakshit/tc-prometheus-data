@@ -499,6 +499,7 @@ sag_tc_dataset_get_latency_100_percentile{client="24896@127.0.0.1:Store:TinyPoun
 sag_tc_cache_get_hit_latency_100_percentile{cache="cache2",cache_manager="TinyPounderCM",client="24896@127.0.0.1:Ehcache:TinyPounderCM",client_address="127.0.0.1",client_name="Ehcache:TinyPounderCM",client_pid="24896",clustered="Y",connection_name="PrometheusCluster1",instance="2c76fb06-c9f8-4adc-a11b-af247d3f2f69",} 1.6428801E7
 sag_tc_cache_get_hit_latency_100_percentile{cache="cache1",cache_manager="TinyPounderCM",client="24896@127.0.0.1:Ehcache:TinyPounderCM",client_address="127.0.0.1",client_name="Ehcache:TinyPounderCM",client_pid="24896",clustered="Y",connection_name="PrometheusCluster1",instance="2c76fb06-c9f8-4adc-a11b-af247d3f2f69",} 1.1520165E8`;
 
+document.getElementById('prometheusFormatData').innerHTML = prometheusMetrics;
 let prometheusMetricsArr = prometheusMetrics.split('\n');
 let prometheusMetricName = '';
 let prometheusMetricsJSON = [];
